@@ -1,0 +1,19 @@
+{
+  "name": "hayday-manager",
+  "version": "0.0.1",
+  "description": "Tools for managing your Hay Day farm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsaffrin/hayday-manager.git"
+  },
+  "author": "Zach Saffrin <zach@zachsaffrin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zsaffrin/hayday-manager/issues"
+  },
+  "homepage": "https://github.com/zsaffrin/hayday-manager#readme"
+}
