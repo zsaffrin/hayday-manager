@@ -74,13 +74,20 @@ class ProductInfoTable extends Component {
 	}
 
 	render() {
-		const { products } = this.state;
+		const { products, fields } = this.state;
 
 		return (
 			<div id="product-info-table">
-				<p>{products.length} products loaded</p>
+				<div className="p2 flex">
+					{fields.map(({ label, key, showField }) => (
+						<div className="p1">
+							<input type="checkbox" checked={showField} />
+							{label}
+						</div>
+					))}
+				</div>
 
-				<Table data={products} fields={this.state.fields} />
+				<Table data={products} fields={fields} />
 			</div>
 		);
 	}
