@@ -1,0 +1,42 @@
+
+@import '_colors';
+
+$cell-padding: .5rem;
+
+.table {
+	border: 1px solid $color-silver;
+	border-collapse: collapse;
+	font-size: .9rem;
+	margin: .5rem;
+
+	th {
+		background: $color-clouds;
+		background-image: linear-gradient($color-clouds, $color-white);
+		border: 1px solid $color-silver;
+		color: $color-belize;
+		padding: $cell-padding;
+		text-align: left;
+
+		&:hover {
+			background: $color-concrete;
+			background-image: linear-gradient($color-silver, $color-white);
+			cursor: pointer;
+		}
+	}
+
+	tbody {
+		tr {
+			background: $color-white;
+
+			&:nth-of-type(even) {
+				background: $color-clouds;
+			}
+		}
+
+		td {
+			border: 1px solid $color-silver;
+			color: $color-midnight;
+			padding: $cell-padding;
+		}
+	}
+}

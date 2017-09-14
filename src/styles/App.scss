@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700');
 
+@import '_colors';
+
 #app {
+	color: $color-midnight;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 
