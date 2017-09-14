@@ -1,93 +1,77 @@
 import React, { Component } from 'react';
-import { arrayOf, string, shape } from 'prop-types';
+import { arrayOf, shape } from 'prop-types';
 
-const Table = ({ data, fields }) => (
-	<table>
-		<thead>
-			<tr>
-				{fields.map(({ label, key, showField }) => (
-					showField ? (
-						<th key={key}>
-							{label}
-						</th>
-					) : false
-				))}
-			</tr>
-		</thead>
-		<tbody>
-			{data.map(item => (
-				<tr key={item.id}>
-					{fields.map(({ key, showField }) => (
-						showField ? (
-							<td key={key}>
-								{item[key]}
-							</td>
-						) : false
-					))}
-				</tr>
-			))}
-		</tbody>
-	</table>
-);
-Table.propTypes = {
-	data: arrayOf(
-		shape({
-			id: string,
-			name: string,
-		}),
-	),
-	fields: arrayOf(
-		shape({
-			label: string,
-			key: string,
-		}),
-	),
-};
-Table.defaultProps = {
-	data: [],
-	fields: [],
-};
+import { appendTimeStringFieldToArray } from './_staticFunctions';
+import Controls from './productInfoTable/Controls';
+import Table from './productInfoTable/Table';
 
 class ProductInfoTable extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			products: props.products,
-			fields: [
-				{
-					label: 'ID',
-					key: 'id',
-					showField: false,
-				},
-				{
+			fields: {
+				name: {
 					label: 'Product',
-					key: 'name',
 					showField: true,
 				},
-				{
-					label: 'Max Value',
-					key: 'maxResale',
+				minLevelRequired: {
+					label: 'Level',
 					showField: true,
+				},
+				maxResale: {
+					label: 'Max Value',
+					showField: true,
+				},
+				minutesToProduce: {
+					label: 'Time',
+					showField: true,
+					customFormat: 'timeString',
+				},
+				xp: {
+					label: 'XP',
+					showField: true,
+				},
+				source: {
+					label: 'Source',
+					showField: true,
+				},
+			},
+			filters: [
+				{
+					type: 'max',
+					field: 'minLevelRequired',
+					value: 22,
 				},
 			],
 		};
 	}
 
+	handleFieldChange = (e) => {
+		const fieldKey = e.target.getAttribute('name');
+		const { fields } = this.state;
+		fields[fieldKey].showField = !fields[fieldKey].showField;
+		this.setState({ fields });
+	}
+
 	render() {
-		const { products, fields } = this.state;
+		const { products, fields, filters } = this.state;
+		const formattedProducts = appendTimeStringFieldToArray(products, 'minutesToProduce');
 
 		return (
 			<div id="product-info-table">
-				<div className="p2 flex">
-					{fields.map(({ label, key, showField }) => (
-						<div className="p1">
-							<input type="checkbox" checked={showField} />
-							{label}
-						</div>
-					))}
-				</div>
+				<Controls
+					fields={fields}
+					filters={filters}
+					handleFieldChange={this.handleFieldChange}
+				/>
 
-				<Table data={products} fields={fields} />
+				<Table
+					data={formattedProducts}
+					fields={fields}
+					filters={filters}
+					defaultSortKey="minLevelRequired"
+				/>
 			</div>
 		);
 	}
