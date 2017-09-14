@@ -41,7 +41,7 @@ class ProductInfoTable extends Component {
 				{
 					type: 'max',
 					field: 'minLevelRequired',
-					value: 22,
+					value: 100,
 				},
 			],
 		};
