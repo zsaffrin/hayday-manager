@@ -1,15 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const httpProxy = require('http-proxy');
-const	path = require('path');
+const path = require('path');
 const bundle = require('./server/bundler.js');
 
-const	app = express();
+const app = express();
 const proxy = httpProxy.createProxyServer();
 
 const isProduction = process.env.NODE_ENV === 'production';
 const port = isProduction ? process.env.PORT : 3013;
-const	publicPath = path.join(__dirname, 'client');
+const publicPath = path.join(__dirname, 'client');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
