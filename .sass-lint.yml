@@ -63,7 +63,10 @@ rules:
   bem-depth: 0
   border-zero: 1
   brace-style: 1
-  clean-import-paths: 1
+  clean-import-paths:
+    - 1
+    -
+      leading-underscore: true
   empty-args: 1
   hex-length: 1
   hex-notation: 1
@@ -74,7 +77,10 @@ rules:
   leading-zero: 1
   max-line-length: 0
   max-file-line-count: 0
-  nesting-depth: 1
+  nesting-depth:
+    - 1
+    -
+      max-depth: 3
   property-sort-order: 1
   pseudo-element: 1
   quotes: 1
