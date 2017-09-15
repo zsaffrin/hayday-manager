@@ -24,16 +24,6 @@ export const formatTime = (totalMinutes) => {
 	return timeString;
 };
 
-export const appendTimeStringFieldToArray = (array, fieldKey) => {
-	const formattedArray = array.map((item) => {
-		const formattedItem = item;
-		formattedItem.timeString = formatTime(formattedItem[fieldKey]);
-		return formattedItem;
-	});
-
-	return formattedArray;
-};
-
 export const sortArray = (data, sortKey, sortDescending = false) => (
 	data.sort((objA, objB) => {
 		const valueA = objA[sortKey];
@@ -54,18 +44,28 @@ export const sortArray = (data, sortKey, sortDescending = false) => (
 	})
 );
 
-export const filterArray = (data, filters) => {
-	let filteredArray;
-	for (let x = 0; x < filters.length; x += 1) {
-		const { type, field, value } = filters[x];
-
-		filteredArray = data.filter((entry) => {
-			if (type === 'max') {
-				return entry[field] <= value;
-			}
-			return true;
-		});
-	}
+export const filterArray = (data, field, filterType, filterValue) => {
+	const filteredArray = data.filter((entry) => {
+		if (filterType === 'max') {
+			return entry[field] <= filterValue;
+		}
+		return true;
+	});
 
 	return filteredArray;
+};
+
+export const getMaxOfField = (data, field) => {
+	let max = 0;
+
+	for (let i = 0; i < data.length; i += 1) {
+		if (typeof data[i][field] !== 'number') {
+			return false;
+		}
+		if (data[i][field] > max) {
+			max = parseInt(data[i][field], 10);
+		}
+	}
+
+	return max;
 };

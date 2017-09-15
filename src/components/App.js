@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './Header';
-import ProductInfoTable from './ProductInfoTable';
+import ProductTable from './ProductTable';
 
 require('overeasy/dist/overeasy-plain.min.css');
 require('font-awesome/css/font-awesome.min.css');
@@ -13,7 +13,7 @@ const App = () => (
 	<div id="app" className="p2">
 		<Header />
 
-		<ProductInfoTable products={products} />
+		<ProductTable products={products} />
 	</div>
 );
 
