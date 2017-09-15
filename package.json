@@ -1,6 +1,6 @@
 {
   "name": "hayday-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tools for managing your Hay Day farm",
   "main": "index.js",
 	"scripts": {
