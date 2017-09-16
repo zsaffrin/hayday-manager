@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-	<div>
+	<div id="header">
 		<h1>Hay Day Manager</h1>
 	</div>
 );

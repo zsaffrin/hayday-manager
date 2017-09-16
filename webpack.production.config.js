@@ -2,7 +2,7 @@ const Webpack = require('webpack');
 const path = require('path');
 
 const sourcePath = path.join(__dirname, 'src', 'index.js');
-const clientPath = path.join(__dirname, 'client');
+const clientPath = path.join(__dirname, 'public');
 
 const config = {
 	entry: {
