@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "Tools for managing your Hay Day farm",
   "main": "index.js",
-	"scripts": {
+  "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
+		"deploy": "firebase deploy",
     "start": "node server.js",
     "start-prod": "NODE_ENV=production PORT=3013 node server.js",
     "test": "jest --verbose",
@@ -20,10 +21,11 @@
     "url": "https://github.com/zsaffrin/hayday-manager/issues"
   },
   "homepage": "https://github.com/zsaffrin/hayday-manager#readme",
-	"dependencies": {
+  "dependencies": {
     "body-parser": "^1.17.2",
     "enzyme": "^2.9.1",
     "express": "^4.15.3",
+    "firebase": "^4.3.1",
     "font-awesome": "^4.7.0",
     "http-proxy": "^1.16.2",
     "jest": "^20.0.4",
