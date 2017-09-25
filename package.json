@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-		"deploy": "firebase deploy",
+    "deploy": "firebase deploy",
     "start": "node server.js",
     "start-prod": "NODE_ENV=production PORT=3013 node server.js",
     "test": "jest --verbose",
@@ -33,6 +33,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.5.4",
+    "react-router-dom": "^4.2.2",
     "react-test-renderer": "^15.6.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
