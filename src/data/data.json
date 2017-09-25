@@ -1265,7 +1265,7 @@
 			"source": "netmaker"
 		},
 		{
-			"id": "mysternet",
+			"id": "mysterynet",
 			"name": "Mystery Net",
 			"minLevelRequired": 30,
 			"maxResale": 0,
@@ -4252,6 +4252,787 @@
 				}
 			],
 			"source": "icecreammaker"
+		}
+	],
+	"productionBuildings": [
+		{
+			"id": "appletree",
+			"name": "Apple Tree",
+			"minLevelRequired": 15,
+			"costToBuild": 160,
+			"minutesToBuild": 0,
+			"xp": 7,
+			"products": [
+				"apple"
+			]
+		},
+		{
+			"id": "bakery",
+			"name": "Bakery",
+			"minLevelRequired": 0,
+			"costToBuild": 20,
+			"minutesToBuild": 0.166,
+			"xp": 3,
+			"products": [
+				"bread",
+				"cornbread",
+				"cookie",
+				"raspberrymuffin",
+				"blackberrymuffin",
+				"pizza",
+				"spicypizza",
+				"potatobread",
+				"fruttidimarepizza",
+				"bananabread"
+			]
+		},
+		{
+			"id": "bananatree",
+			"name": "Banana Tree",
+			"minLevelRequired": 88,
+			"costToBuild": 800,
+			"minutesToBuild": 0,
+			"xp": 54,
+			"products": [
+				"banana"
+			]
+		},
+		{
+			"id": "bbqgrill",
+			"name": "BBQ Grill",
+			"minLevelRequired": 9,
+			"costToBuild": 730,
+			"minutesToBuild": 420,
+			"xp": 14,
+			"products": [
+				"pancake",
+				"baconeggs",
+				"hamburger",
+				"fishburger",
+				"roastedtomatoes",
+				"bakedpotato",
+				"fishchips",
+				"lobsterskewer",
+				"grilledonion",
+				"bananapancakes"
+			]
+		},
+		{
+			"id": "bee",
+			"name": "Bee",
+			"minLevelRequired": 39,
+			"costToBuild": 1500,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"honeycomb"
+			]
+		},
+		{
+			"id": "blackberrybush",
+			"name": "Blackberry Bush",
+			"minLevelRequired": 26,
+			"costToBuild": 530,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"blackberry"
+			]
+		},
+		{
+			"id": "cacaotree",
+			"name": "Cacao Tree",
+			"minLevelRequired": 36,
+			"costToBuild": 550,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"cacao"
+			]
+		},
+		{
+			"id": "cakeoven",
+			"name": "Cake Oven",
+			"minLevelRequired": 21,
+			"costToBuild": 12100,
+			"minutesToBuild": 1440,
+			"xp": 24,
+			"products": [
+				"carrotcake",
+				"creamcake",
+				"redberrycake",
+				"cheesecake",
+				"strawberrycake",
+				"chocolatecake",
+				"potatofetacake",
+				"honeyapplecake",
+				"lemoncake",
+				"fruitcake"
+			]
+		},
+		{
+			"id": "candlemaker",
+			"name": "Candle Maker",
+			"minLevelRequired": 48,
+			"costToBuild": 118000,
+			"minutesToBuild": 2280,
+			"xp": 24,
+			"products": [
+				"strawberrycandle",
+				"raspberrycandle",
+				"lemoncandle"
+			]
+		},
+		{
+			"id": "candymachine",
+			"name": "Candy Machine",
+			"minLevelRequired": 51,
+			"costToBuild": 120000,
+			"minutesToBuild": 1440,
+			"xp": 27,
+			"products": [
+				"caramelapple",
+				"toffee",
+				"chocolate",
+				"lollipop",
+				"jellybeans"
+			]
+		},
+		{
+			"id": "cherrytree",
+			"name": "Cherry Tree",
+			"minLevelRequired": 22,
+			"costToBuild": 410,
+			"minutesToBuild": 0,
+			"xp": 13,
+			"products": [
+				"cherry"
+			]
+		},
+		{
+			"id": "chicken",
+			"name": "Chicken",
+			"minLevelRequired": 1,
+			"costToBuild": 10,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"egg"
+			]
+		},
+		{
+			"id": "coffeebush",
+			"name": "Coffee Bush",
+			"minLevelRequired": 42,
+			"costToBuild": 375,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"coffeebean"
+			]
+		},
+		{
+			"id": "coffeekiosk",
+			"name": "Coffee Kiosk",
+			"minLevelRequired": 42,
+			"costToBuild": 75000,
+			"minutesToBuild": 2100,
+			"xp": 35,
+			"products": [
+				"espresso",
+				"caffelatte",
+				"caffemocha",
+				"raspberrymocha",
+				"hotchocolate",
+				"icedbananalatte"
+			]
+		},
+		{
+			"id": "cow",
+			"name": "Cow",
+			"minLevelRequired": 6,
+			"costToBuild": 50,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"milk"
+			]
+		},
+		{
+			"id": "dairy",
+			"name": "Dairy",
+			"minLevelRequired": 6,
+			"costToBuild": 50,
+			"minutesToBuild": 120,
+			"xp": 8,
+			"products": [
+				"cream",
+				"butter",
+				"cheese",
+				"goatcheese"
+			]
+		},
+		{
+			"id": "ducksalon",
+			"name": "Duck Salon",
+			"minLevelRequired": 50,
+			"costToBuild": 90000,
+			"minutesToBuild": 3420,
+			"xp": 34,
+			"products": [
+				"duckfeather"
+			]
+		},
+		{
+			"id": "feedmill",
+			"name": "Feed Mill",
+			"minLevelRequired": 3,
+			"costToBuild": 5,
+			"minutesToBuild": 0.6667,
+			"xp": 4,
+			"products": [
+				"chickenfeed",
+				"cowfeed",
+				"pigfeed",
+				"sheepfeed",
+				"goatfeed"
+			]
+		},
+		{
+			"id": "field",
+			"name": "Field",
+			"minLevelRequired": 1,
+			"costToBuild": 1,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"wheat",
+				"corn",
+				"soybean",
+				"sugarcane",
+				"carrot",
+				"indigo",
+				"apple",
+				"pumpkin",
+				"cotton",
+				"raspberry",
+				"cherry",
+				"chilipepper",
+				"blackberry",
+				"tomato",
+				"strawberry",
+				"potato",
+				"cacao",
+				"coffeebean",
+				"rice",
+				"olive",
+				"lettuce",
+				"lemon",
+				"onion",
+				"orange",
+				"peach",
+				"tealeaf",
+				"grapes",
+				"banana"
+			]
+		},
+		{
+			"id": "fish",
+			"name": "Fish",
+			"minLevelRequired": 27,
+			"costToBuild": 0,
+			"minutesToBuild": 0,
+			"xp": 10,
+			"products": [
+				"fishfillet"
+			]
+		},
+		{
+			"id": "goat",
+			"name": "Goat",
+			"minLevelRequired": 32,
+			"costToBuild": 2150,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"goatmilk"
+			]
+		},
+		{
+			"id": "hatmaker",
+			"name": "Hat Maker",
+			"minLevelRequired": 70,
+			"costToBuild": 260000,
+			"minutesToBuild": 4500,
+			"xp": 40,
+			"products": [
+				"clochehat",
+				"tophat",
+				"sunhat"
+			]
+		},
+		{
+			"id": "honeyextractor",
+			"name": "Honey Extractor",
+			"minLevelRequired": 39,
+			"costToBuild": 35000,
+			"minutesToBuild": 1440,
+			"xp": 24,
+			"products": [
+				"honey",
+				"beeswax"
+			]
+		},
+		{
+			"id": "hotdogstand",
+			"name": "Hot Dog Stand",
+			"minLevelRequired": 75,
+			"costToBuild": 650000,
+			"minutesToBuild": 5160,
+			"xp": 41,
+			"products": [
+				"hotdog",
+				"tofudog",
+				"corndog",
+				"oniondog"
+			]
+		},
+		{
+			"id": "icecreammaker",
+			"name": "Ice Cream Maker",
+			"minLevelRequired": 29,
+			"costToBuild": 38000,
+			"minutesToBuild": 1860,
+			"xp": 0,
+			"products": [
+				"vanillaicecream",
+				"cherrypopsicle",
+				"strawberryicecream",
+				"chocolateicecream",
+				"orangesorbet",
+				"peachicecream",
+				"bananasplit"
+			]
+		},
+		{
+			"id": "jammaker",
+			"name": "Jam Maker",
+			"minLevelRequired": 35,
+			"costToBuild": 59000,
+			"minutesToBuild": 2160,
+			"xp": 0,
+			"products": [
+				"applejam",
+				"raspberryjam",
+				"blackberryjam",
+				"cherryjam",
+				"strawberryjam",
+				"marmalade",
+				"peachjam",
+				"grapejam"
+			]
+		},
+		{
+			"id": "jeweler",
+			"name": "Jeweler",
+			"minLevelRequired": 38,
+			"costToBuild": 68000,
+			"minutesToBuild": 2160,
+			"xp": 28,
+			"products": [
+				"bracelet",
+				"necklace",
+				"diamondring",
+				"ironbracelet"
+			]
+		},
+		{
+			"id": "juicepress",
+			"name": "Juice Press",
+			"minLevelRequired": 26,
+			"costToBuild": 31000,
+			"minutesToBuild": 1860,
+			"xp": 27,
+			"products": [
+				"carrotjuice",
+				"applejuice",
+				"cherryjuice",
+				"tomatojuice",
+				"berryjuice",
+				"orangejuice",
+				"grapejuice"
+			]
+		},
+		{
+			"id": "lemontree",
+			"name": "Lemon Tree",
+			"minLevelRequired": 66,
+			"costToBuild": 670,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"lemon"
+			]
+		},
+		{
+			"id": "lobsterpool",
+			"name": "Lobster Pool",
+			"minLevelRequired": 44,
+			"costToBuild": 80000,
+			"minutesToBuild": 2880,
+			"xp": 32,
+			"products": [
+				"lobstertail"
+			]
+		},
+		{
+			"id": "loom",
+			"name": "Loom",
+			"minLevelRequired": 17,
+			"costToBuild": 3200,
+			"minutesToBuild": 1440,
+			"xp": 24,
+			"products": [
+				"sweater",
+				"cottonfabric",
+				"bluewoolyhat",
+				"bluesweater",
+				"redscarf"
+			]
+		},
+		{
+			"id": "lureworkbench",
+			"name": "Lure Workbench",
+			"minLevelRequired": 27,
+			"costToBuild": 0,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"redlure",
+				"greenlure",
+				"bluelure",
+				"purplelure",
+				"goldlure"
+			]
+		},
+		{
+			"id": "mine",
+			"name": "Mine",
+			"minLevelRequired": 24,
+			"costToBuild": 21000,
+			"minutesToBuild": 2100,
+			"xp": 28,
+			"products": [
+				"silverore",
+				"goldore",
+				"platinumore",
+				"coal",
+				"ironore"
+			]
+		},
+		{
+			"id": "netmaker",
+			"name": "Net Maker",
+			"minLevelRequired": 30,
+			"costToBuild": 28000,
+			"minutesToBuild": 2880,
+			"xp": 0,
+			"products": [
+				"fishingnet",
+				"mysterynet",
+				"lobstertrap",
+				"ducktrap"
+			]
+		},
+		{
+			"id": "olivetree",
+			"name": "Olive Tree",
+			"minLevelRequired": 57,
+			"costToBuild": 620,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"olive"
+			]
+		},
+		{
+			"id": "orangetree",
+			"name": "Orange Tree",
+			"minLevelRequired": 71,
+			"costToBuild": 720,
+			"minutesToBuild": 0,
+			"xp": 20,
+			"products": [
+				"orange"
+			]
+		},
+		{
+			"id": "pastakitchen",
+			"name": "Pasta Kitchen",
+			"minLevelRequired": 72,
+			"costToBuild": 550000,
+			"minutesToBuild": 5040,
+			"xp": 42,
+			"products": [
+				"gnocchi",
+				"veggielasagna",
+				"lobsterpasta"
+			]
+		},
+		{
+			"id": "pastamaker",
+			"name": "Pasta Maker",
+			"minLevelRequired": 67,
+			"costToBuild": 400000,
+			"minutesToBuild": 4740,
+			"xp": 43,
+			"products": [
+				"freshpasta",
+				"ricenoodles"
+			]
+		},
+		{
+			"id": "peachtree",
+			"name": "Peach Tree",
+			"minLevelRequired": 76,
+			"costToBuild": 750,
+			"minutesToBuild": 0,
+			"xp": 19,
+			"products": [
+				"peach"
+			]
+		},
+		{
+			"id": "pieoven",
+			"name": "Pie Oven",
+			"minLevelRequired": 14,
+			"costToBuild": 2200,
+			"minutesToBuild": 720,
+			"xp": 17,
+			"products": [
+				"carrotpie",
+				"pumpkinpie",
+				"baconpie",
+				"applepie",
+				"fishpie",
+				"fetapie",
+				"casserole",
+				"shepherdspie",
+				"lemonpie",
+				"peachtart"
+			]
+		},
+		{
+			"id": "pig",
+			"name": "Pig",
+			"minLevelRequired": 10,
+			"costToBuild": 500,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"bacon"
+			]
+		},
+		{
+			"id": "popcornpot",
+			"name": "Popcorn Pot",
+			"minLevelRequired": 8,
+			"costToBuild": 650,
+			"minutesToBuild": 420,
+			"xp": 14,
+			"products": [
+				"popcorn",
+				"butterpopcorn",
+				"chilipopcorn",
+				"honeypopcorn",
+				"chocolatepopcorn"
+			]
+		},
+		{
+			"id": "raspberrybush",
+			"name": "Raspberry Bush",
+			"minLevelRequired": 19,
+			"costToBuild": 220,
+			"minutesToBuild": 0,
+			"xp": 9,
+			"products": [
+				"raspberry"
+			]
+		},
+		{
+			"id": "saladbar",
+			"name": "Salad Bar",
+			"minLevelRequired": 58,
+			"costToBuild": 165000,
+			"minutesToBuild": 2880,
+			"xp": 32,
+			"products": [
+				"fetasalad",
+				"bltsalad",
+				"seafoodsalad",
+				"pastasalad",
+				"fruitsalad",
+				"summersalad"
+			]
+		},
+		{
+			"id": "sandwichbar",
+			"name": "Sandwich Bar",
+			"minLevelRequired": 61,
+			"costToBuild": 180000,
+			"minutesToBuild": 3120,
+			"xp": 34,
+			"products": [
+				"veggiebagel",
+				"bacontoast",
+				"eggsandwich",
+				"honeytoast",
+				"goatcheesetoast"
+			]
+		},
+		{
+			"id": "saucemaker",
+			"name": "Sauce Maker",
+			"minLevelRequired": 54,
+			"costToBuild": 135000,
+			"minutesToBuild": 2400,
+			"xp": 30,
+			"products": [
+				"soysauce",
+				"oliveoil",
+				"mayonnaise",
+				"lemoncurd",
+				"tomatosauce",
+				"salsa"
+			]
+		},
+		{
+			"id": "sewingmachine",
+			"name": "Sewing Machine",
+			"minLevelRequired": 19,
+			"costToBuild": 4500,
+			"minutesToBuild": 1200,
+			"xp": 19,
+			"products": [
+				"cottonshirt",
+				"woolychaps",
+				"violetdress",
+				"pillow",
+				"blanket"
+			]
+		},
+		{
+			"id": "sheep",
+			"name": "Sheep",
+			"minLevelRequired": 16,
+			"costToBuild": 800,
+			"minutesToBuild": 0,
+			"xp": 0,
+			"products": [
+				"wool"
+			]
+		},
+		{
+			"id": "smelter",
+			"name": "Smelter",
+			"minLevelRequired": 24,
+			"costToBuild": 12500,
+			"minutesToBuild": 1080,
+			"xp": 21,
+			"products": [
+				"silverbar",
+				"goldbar",
+				"platinumbar",
+				"refinedcoal",
+				"ironbar"
+			]
+		},
+		{
+			"id": "smoothiemixer",
+			"name": "Smoothie Mixer",
+			"minLevelRequired": 64,
+			"costToBuild": 220000,
+			"minutesToBuild": 4320,
+			"xp": 39,
+			"products": [
+				"berrysmoothie",
+				"greensmoothie",
+				"yogurtsmoothie",
+				"mixedsmoothie"
+			]
+		},
+		{
+			"id": "soupkitchen",
+			"name": "Soup Kitchen",
+			"minLevelRequired": 46,
+			"costToBuild": 115000,
+			"minutesToBuild": 1080,
+			"xp": 28,
+			"products": [
+				"lobstersoup",
+				"tomatosoup",
+				"pumpkinsoup",
+				"fishsoup",
+				"onionsoup",
+				"noodlesoup",
+				"potatosoup"
+			]
+		},
+		{
+			"id": "sugarmill",
+			"name": "Sugar Mill",
+			"minLevelRequired": 7,
+			"costToBuild": 350,
+			"minutesToBuild": 360,
+			"xp": 13,
+			"products": [
+				"brownsugar",
+				"whitesugar",
+				"syrup"
+			]
+		},
+		{
+			"id": "sushibar",
+			"name": "Sushi Bar",
+			"minLevelRequired": 56,
+			"costToBuild": 150000,
+			"minutesToBuild": 2640,
+			"xp": 38,
+			"products": [
+				"sushiroll",
+				"lobstersushi",
+				"eggsushi"
+			]
+		},
+		{
+			"id": "tacokitchen",
+			"name": "Taco Kitchen",
+			"minLevelRequired": 77,
+			"costToBuild": 700000,
+			"minutesToBuild": 5400,
+			"xp": 43,
+			"products": [
+				"taco",
+				"fishtaco",
+				"quesadilla",
+				"nachos"
+			]
+		},
+		{
+			"id": "teastand",
+			"name": "Tea Stand",
+			"minLevelRequired": 80,
+			"costToBuild": 750000,
+			"minutesToBuild": 5700,
+			"xp": 44,
+			"products": [
+				"greentea",
+				"milktea",
+				"honeytea",
+				"lemontea",
+				"orangetea",
+				"icedtea"
+			]
 		}
 	]
 }
